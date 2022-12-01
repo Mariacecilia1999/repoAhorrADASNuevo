@@ -15,7 +15,7 @@
   rel="icon"
   href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📈</text></svg>"
 />
-  <link rel="stylesheet" href="./estilos.css">
+  <link rel="stylesheet" href="./assets/css/estilos.css">
 </head>
 
 <body>
@@ -82,13 +82,18 @@
       </div>
   </section>
 
-  <section class="reportes">
-    <div class="box reportesSinResultados ocultar">
-      <h2>Reportes</h2>
+  <section class="reportes is-flex is-justify-content-center">
+    <div class="box reportesSinResultados ocultar column is-7 py-6 my-6">
+      <h2 class="is-size-2">Reportes</h2>
+      <div class="is-flex is-flex-direction-column is-align-items-center">
+        <img src="./assets/img/sinReportesimg.svg" alt="Imagen sin reportes" width="50%" class="py-6"> 
+        <h3 class="is-size-4 py-2">Operadores insuficientes</h3>
+        <p>Prueba agregando más operaciones</p>
+      </div>
     </div>
   </section>
 
-  <script src="./main.js"></script>
+  <script src="./assets/js/main.js"></script>
   
 </body>
 </html>
