@@ -95,3 +95,13 @@ $('#mostrarSeccionCategoria').addEventListener('click', mostrarSeccionCategoria)
 
 
 
+//Sección reportes
+
+let mostrarSeccionReportes = () =>{
+   $('.reportesSinResultados').classList.remove('ocultar')
+   $('.reportesSinResultados').classList.add('mostrar')
+   
+}
+
+
+$('.mostrarSeccionReporte').addEventListener('click', mostrarSeccionReportes)
