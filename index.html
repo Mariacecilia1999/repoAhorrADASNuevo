@@ -1,0 +1,88 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AhorrADAs</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+  integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+  crossorigin="anonymous"
+/>
+  <link
+  rel="icon"
+  href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📈</text></svg>"
+/>
+  <link rel="stylesheet" href="./estilos.css">
+</head>
+
+<body>
+
+  <header class="has-background-primary  is-flex  is-justify-content-space-between is-align-items-center px-6 py-3">
+
+    <div class="ml-6">
+      <a href="#" class="has-text-white">
+        <h1 class="is-size-2">
+        <i class="fas fa-wallet mr-2" aria-hidden="true"></i>
+        AhorrADAs</h1>
+      </a>
+    </div>
+
+    <div class="is-flex is-align-content-center mr-6">
+      
+      <a href="#" class="has-text-white ml-2 mr-3">
+        <i class="fas fa-chart-line mr-2" aria-hidden="true pl"></i>
+        Balance
+      </a>
+
+      <a href="#" class="has-text-white ml-2 mr-3" id="mostrarSeccionCategoria">
+        <i class="fas fa-tag mr-2" aria-hidden="true"></i>
+        Categorías        
+      </a>
+
+
+      <a href="#" class="has-text-white ml-2 ml-3">
+        <i class="fas fa-chart-pie mr-2" aria-hidden="true"></i>
+        Reportes
+      </a>
+    </div>
+  </header>
+
+
+
+<section class="sectionCategoria is-flex is-justify-content-center is-align-content-center mt-6">
+    <div class="ocultar  box box-categoria categoriaLista column is-7 pb-6 px-5">
+      <h2 class="is-size-1">Categorías</h2>
+      <div class="mt-4">
+        <label for="nombre">Nombre</label>
+        <div class="is-flex mt-2">
+          <input type="text" class="input full-width" id="capturarCategoria">
+          <button class="button ml-3 agregarCategoria has-background-primary has-text-white" id="agregarCategoria">Agregar</button>
+        </div>
+      </div>
+      <div id="categoriaNueva">
+
+      </div>
+    </div>
+
+    <div class="ocultar categoriaEditar box box-categoria column is-7 pb-6 px-5">
+      <h2 class="is-size-1">Editar categoría</h2>
+      <div class="mt-4">
+        <label for="nombre">Nombre</label>
+        <div class="mt-2">
+          <input type="text" class="input full-width" id="capturarNombreNuevo">
+          <div class="is-flex is-justify-content-flex-end mt-3">
+            <button class="button ml-3"   id="cancelarCategoria">Cancelar</button>
+            <button class="button ml-3  has-background-primary has-text-white" id="agregarCategoriaNueva">Editar</button>
+          </div>
+        </div>
+      </div>
+      </div>
+  </section> 
+
+  <script src="./main.js"></script>
+  
+</body>
+</html>
