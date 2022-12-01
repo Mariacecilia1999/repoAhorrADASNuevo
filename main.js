@@ -83,9 +83,12 @@ $('#agregarCategoria').addEventListener('click', agregarCategoria)
 //Mostrar sección categoría
 
 let mostrarSeccionCategoria = () =>{
+    //OcultarSeccionReportes en sección categoría
+    $('.reportesSinResultados').classList.remove('mostrar')
+    $('.reportesSinResultados').classList.add('ocultar')
+
    $('.categoriaLista').classList.remove('ocultar')
    $('.categoriaLista').classList.add('mostrar')
-   agregarCategoria()
 }
 
 
@@ -98,6 +101,10 @@ $('#mostrarSeccionCategoria').addEventListener('click', mostrarSeccionCategoria)
 //Sección reportes
 
 let mostrarSeccionReportes = () =>{
+   //Ocultar sección categoría en reportes
+   $('.categoriaLista').classList.remove('mostrar')
+   $('.categoriaLista').classList.add('ocultar')
+   
    $('.reportesSinResultados').classList.remove('ocultar')
    $('.reportesSinResultados').classList.add('mostrar')
    
